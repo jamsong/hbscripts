@@ -35,7 +35,7 @@ mqtt:
   # MQTT base topic for Zigbee2MQTT MQTT messages
   base_topic: zigbee2mqtt
   # MQTT server URL
-  server: 'mqtt://192.168.8.169:1883'
+  server: 'mqtt://10.0.0.70:1883'
   # MQTT server authentication, uncomment if required:
   # user: mqtt
   # password: mqtt
@@ -47,9 +47,9 @@ serial:
 
 frontend:
   # Optional, default 8080 or you can use your own as well.
-  port: 8080
+  port: 8081
   # IP address of the device running Zigbee2MQTT
-  host: 192.168.8.169
+  host: 10.0.0.70
 advanced:
   log_level: debug
   network_key: GENERATE
@@ -70,7 +70,7 @@ StandardOutput=inherit
 # Or use StandardOutput=null if you don't want Zigbee2MQTT messages filling syslog, for more options see systemd.exec(5)
 StandardError=inherit
 Restart=always
-User=pi
+User=james
 
 [Install]
 WantedBy=multi-user.target

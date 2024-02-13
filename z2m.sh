@@ -47,7 +47,7 @@ serial:
 
 frontend:
   # Optional, default 8080 or you can use your own as well.
-  port: 8081
+  port: 8082
   # IP address of the device running Zigbee2MQTT
   host: 10.0.0.70
 advanced:
